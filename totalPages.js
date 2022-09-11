@@ -5,7 +5,7 @@ function totalPages(arrayItems, rowsPerPage) {
   else if (
     rowsPerPage === null ||
     rowsPerPage === undefined ||
-    rowsPerPage.length === 0
+    rowsPerPage === 0
   )
     return 1;
   return Math.ceil(arrayItems.length / rowsPerPage);
